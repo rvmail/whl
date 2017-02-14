@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/pcenterPanel"
+        android:layout_width="@dimen/px541"
+        android:layout_height="@dimen/px293"
+		android:background="@drawable/bg_dialog">
+
+        <TextView 
+        	android:id="@+id/alertTitle"
+         	android:layout_width="wrap_content"
+         	android:layout_height="@dimen/px48"
+         	android:layout_centerHorizontal="true"
+         	android:layout_marginTop="@dimen/px74"
+         	android:textColor="#9fa8a5"
+         	android:textSize="@dimen/px42"
+         	android:gravity="center"
+        	android:text=""/>
+        <Button 
+        	android:id="@+id/negativeBtn"
+         	android:layout_width="@dimen/px176"
+         	android:layout_height="@dimen/px64"
+         	android:layout_below="@+id/alertTitle"
+         	android:layout_alignParentRight="true"
+         	android:layout_marginTop="@dimen/px60"
+         	android:layout_marginRight="@dimen/px65"
+         	android:background="@drawable/btn_selector_dialog"
+         	android:gravity="center"
+         	android:textColor="#9fa8a5"
+         	android:textSize="@dimen/px30"
+        	android:text=""/>
+        <Button 
+        	android:id="@+id/positiveBtn"
+         	android:layout_width="@dimen/px176"
+         	android:layout_height="@dimen/px64"
+         	android:layout_alignParentLeft="true"
+         	android:layout_alignTop="@+id/negativeBtn"
+         	android:layout_marginLeft="@dimen/px65"
+         	android:background="@drawable/btn_selector_dialog"
+         	android:gravity="center"
+         	android:textColor="#9fa8a5"
+         	android:textSize="@dimen/px30"
+        	android:text=""/>
+    </RelativeLayout>
+
+</RelativeLayout>

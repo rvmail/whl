@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px541"
+    android:layout_height="@dimen/px293"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="@dimen/px42"
+    >
+
+    <LinearLayout
+        android:id="@+id/dialog_llayout_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+		 >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px42"
+            android:textColor="@color/text_bottom_main"
+            android:text="@string/str_login_failed_remind" />
+
+        <TextView
+            android:id="@+id/dialog_tv_login_failed_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_bottom_main"
+            android:textSize="@dimen/px42"
+            />
+    </LinearLayout>
+       <TextView
+            android:id="@+id/dialog_tv_call_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_llayout_remind"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/px42"
+            android:textColor="@color/text_bottom_main" />
+       
+          <TextView
+            android:id="@+id/dialog_tv_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_tv_call_service"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px50"
+            android:gravity="center"
+            android:textSize="@dimen/px42"
+            android:background="@drawable/btn_selector_dialog"
+            android:text="@string/text_positive"
+            android:textColor="@color/text_bottom_main"
+            android:focusable="true"/>
+</RelativeLayout>

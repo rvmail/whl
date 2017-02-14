@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewTV</string>
+    <string name="str_login_failed_remind">错误代码：</string>
+    <string name="str_login_failed_call_service">请联系当地客服人员</string>
+    <string name="tip_no_enough_memory">内存空间不足！</string>
+    <string name="tip_parse_error">解析错误</string>
+    <string name="tip_no_recommendation">无相关推荐</string>
+    
+    <!-- 更新接口失败 -->
+    <string name="update_failed_hint">客户端无法升级，请检查您的网络或联系客服人员</string>
+    
+    <!-- 登录失败，对应error code的提示 -->
+    <string name="tip_report_error">报备异常，请断电重启您的设备</string>
+    <string name="tip_auth_failed">认证失败，请断电重启网络设备</string>
+    <string name="tip_service_stop">服务已停止，请联系客服</string>
+    <string name="tip_mac_invalid">MAC错误，请联系客服</string>
+    <string name="tip_token_error">MAC异常，请断电重启您的设备</string>
+    <string name="tip_network_error">网络异常，请尝试重置您的路由器</string>
+    <string name="tip_data_incomplete">数据加载不全，请重新联网</string>
+    <string name="tip_mac_read_failed">MAC读取失败，请重启您的设备</string>
+    <string name="tip_access_restriction">访问限制，请尝试重置您的路由器</string>
+   
+    
+    <!-- 首页底部的文本 -->
+    <string name="str_live">直播</string>
+    <string name="str_live_en">Live</string>
+    <string name="str_vod">点播</string>
+    <string name="str_vod_en">VOD</string>
+    <string name="str_history">历史</string>
+    <string name="str_history_en">History</string>
+    <string name="str_favorite">收藏</string>
+    <string name="str_favorite_en">Favorite</string>
+    
+    <!-- 单片介绍 -->
+    <string name="str_type_movie">所属套餐:</string>
+    <string name="str_years_movie">影片年代:</string>
+    <string name="str_duration_movie">影片时长:</string>
+    <string name="str_price_movie">单片价格:</string>
+    <string name="str_area_movie">影片产地:</string>
+    <string name="str_director_movie">导&#160;&#160;演:</string>
+    <string name="str_actor_movie">主&#160;&#160;演:</string>
+    <string name="str_relative_recommend">相关推荐</string>
+    
+    <string name="programClass">分类</string>
+    <string name="type">类型</string>
+    <string name="zone">地区</string>
+    <string name="audiences">受众</string>
+    <string name="releaseDate">年代</string>
+    <string name="information">简介</string>
+    <string name="ppvID">价格</string>
+    <string name="subject">科目</string>
+    <string name="director">导演</string>
+    <string name="actor">主演</string>
+    <string name="tag">标签</string>
+    <string name="presenter">主持人</string>
+    <string name="competition">赛事</string>
+    
+    <string name="channel1">动漫</string>
+    <string name="channel2">少儿</string>
+    <string name="channel3">少儿（付费类）</string>
+    <string name="channel4">教育（课程类）</string>
+    <string name="channel5">教育（其他类）</string>
+    <string name="channel6">纪录片</string>
+    <string name="channel7">生活</string>
+    <string name="channel8">淘你喜欢</string>
+    <string name="channel9">央视农经</string>
+    <string name="channel10">央视新闻</string>
+    <string name="channel11">央视名栏</string>
+    <string name="channel12">综艺</string>
+    <string name="channel13">体育</string>
+    <string name="channel14">曲艺</string>
+    <string name="channel15">世界搏击</string>
+    <string name="channel16">电影</string>
+    <string name="channel17">电影（付费）</string>
+    <string name="channel18">电影类光影解读</string>
+    <string name="channel19">电影类主题电影</string>
+    <string name="channel20">电视剧</string>
+    <string name="channel21">音乐</string>
+    <string name="channel22">音乐类主题乐单</string>
+    
+    <string name="n">1</string>
+    <string name="m">2</string>
+    
+    <string name="msg_dialog_exit">是否退出当前播放？</string>
+    <string name="msg_exit_app">是否退出应用？</string>
+    <string name="msg_dialog_next">是否播放下一集？</string>
+    <string name="msg_dialog_select">是否播放该集？</string>
+    <string name="msg_dialog_error">抱歉，播放出错了</string>
+    <string name="msg_dialog_timeout">加载超时，请检查您的互联网</string>
+    <string name="msg_dialog_live_error">当前频道无法正常播出，请尝试观看其他频道</string>
+    <string name="text_positive">确定</string>
+    <string name="text_negative">取消</string>
+    <string name="text_retry">重试</string>
+    <string name="text_retry_live">换台</string>
+    <string name="text_exit">退出</string>
+    
+    <!-- 点播播放器页面 -->
+    <string name="tip_final_episode">您已看到最后一集</string>
+    <string name="tip_progress_loading">加载中</string>
+    <string name="tv_volume_prefix">音量</string>
+    <string name="tv_default_time_format">00:00:00</string>
+    <string name="tv_play_complete">播放完毕</string>
+    <string name="tv_play_error">播放出错</string>
+    <string name="tv_get_length_error">节目时长获取异常</string>
+    
+    <!--搜索 -->
+    <string name="text_search_hint">搜索</string>
+    <string name="text_search_remind">“请输入影片首字母进行搜索 例 叶问-YW”</string>
+    <string name="text_search_no_data_hint">抱歉，未搜索到任何内容</string>
+    
+    <!-- 历史and收藏 -->
+    <string name="no_history">暂无历史记录</string>
+    <string name="no_collect">暂无收藏记录</string>
+    <string name="no_epg">当前栏目暂时没有节目</string>
+</resources>

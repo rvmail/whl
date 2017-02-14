@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px310"
+    android:layout_height="@dimen/px110"
+    android:clipChildren="false"
+    >
+    <TextView
+        android:id="@+id/tv_item_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BaseText"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/px12"
+        android:paddingRight="@dimen/px12"
+        android:gravity="center_vertical"
+		/>
+</RelativeLayout>

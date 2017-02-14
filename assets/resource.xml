@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	因要保持excel表中每一类别的排列顺序，所以每个channeltag中的item顺序不一致
+ -->
+  <channels>
+	<channel name="动漫">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">true</item>
+	    <item name="audiences">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	<channel name="少儿">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">true</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="少儿（付费类）">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">true</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">true</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="教育（课程类）">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="audiences">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">true</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="教育（其他类）">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">true</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="纪录片">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="director">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="tag">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="actor">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="生活">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="tag">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="淘你喜欢">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">false</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">true</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="央视农经">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">true</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="央视新闻">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="央视名栏">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="综艺">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="presenter">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="体育">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="competition">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	</channel>
+	
+	<channel name="曲艺">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="actor">true</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="世界搏击">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="电影">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="director">true</item>
+	    <item name="actor">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="电影（付费）">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="ppvID">true</item>
+	    <item name="director">true</item>
+	    <item name="actor">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="subject">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="电影类光影解读">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">false</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="电影类主题电影">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">false</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="音乐">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">false</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="音乐类主题乐单">
+	    <item name="programClass">true</item>
+	    <item name="type">true</item>
+	    <item name="zone">false</item>
+	    <item name="audiences">false</item>
+	    <item name="releaseDate">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="director">false</item>
+	    <item name="actor">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="电视剧">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="director">true</item>
+	    <item name="actor">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+	<channel name="其他">
+	    <item name="programClass">true</item>
+	    <item name="releaseDate">true</item>
+	    <item name="zone">true</item>
+	    <item name="director">true</item>
+	    <item name="actor">true</item>
+	    <item name="type">true</item>
+	    <item name="audiences">false</item>
+	    <item name="information">true</item>
+	    <item name="ppvID">false</item>
+	    <item name="subject">false</item>
+	    <item name="tag">false</item>
+	    <item name="presenter">false</item>
+	    <item name="competition">false</item>
+	</channel>
+	
+  </channels>	

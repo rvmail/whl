@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px253"
+    android:layout_height="@dimen/px61"
+    android:background="@drawable/btn_selector_seris_play" 
+    >
+    
+    <ImageView
+    	android:id="@+id/img_item_play"
+        android:layout_width="@dimen/px244"
+        android:layout_height="@dimen/px51"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/tv_item_play"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px51"
+        android:layout_centerInParent="true"
+        android:textColor="#85929b"
+        android:textSize="@dimen/px30"
+        android:gravity="center"
+        style="@style/BaseText"
+        android:maxEms="6"
+        android:text=""/>
+</RelativeLayout>

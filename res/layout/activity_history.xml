@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px1920"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="@dimen/px1920"
+        android:layout_height="@dimen/px138"
+        android:layout_alignParentTop="true"
+        layout="@layout/history_and_collect_header" />
+    
+    <FrameLayout 
+        android:layout_below="@id/header"
+        android:layout_width="@dimen/px1920"
+        android:layout_height="@dimen/px942"
+        >
+          <com.dopool.icntvoverseas.view.focusrecyclerview.GridFocusRecyclerView
+            android:id="@+id/history_gv"
+            android:layout_height="@dimen/px864"
+            android:layout_width="@dimen/px1920"
+            android:paddingRight="@dimen/px160"
+            android:paddingTop="@dimen/px42"
+		    android:clipToPadding="false"
+		    android:visibility="gone"
+		    android:layout_marginTop="@dimen/px18"
+            >
+        </com.dopool.icntvoverseas.view.focusrecyclerview.GridFocusRecyclerView>
+	    
+	    <ImageView 
+	        android:id="@+id/up"
+	        android:layout_height="@dimen/px28"
+	        android:layout_width="@dimen/px50"
+	        android:layout_gravity="center_horizontal|top"
+	        android:background="@drawable/up"
+	        android:visibility="gone"
+	        android:layout_marginLeft="@dimen/px140"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/down"
+	        android:layout_height="@dimen/px30"
+	        android:layout_width="@dimen/px50"
+	        android:layout_marginBottom="@dimen/px75"
+	        android:layout_gravity="center_horizontal|bottom"
+	        android:background="@drawable/down"
+	        android:visibility="gone"
+	        android:layout_marginLeft="@dimen/px140"
+	        />
+        
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/empty"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="@string/no_history"
+	    android:textSize="@dimen/px60"
+	    android:layout_centerInParent="true"
+	    android:textColor="@color/text_bottom_main"
+	    android:visibility="gone"
+	    >
+	</TextView>
+    
+
+</RelativeLayout>

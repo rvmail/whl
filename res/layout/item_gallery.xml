@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px180"
+    android:layout_height="@dimen/px306">
+    
+    <ImageView
+    	android:id="@+id/img_gallery"
+        android:layout_width="@dimen/px180"
+        android:layout_height="@dimen/px255"
+        android:scaleType="fitXY"
+        android:src="@drawable/topic_focus" 
+        android:background="@drawable/newtv_default"
+        android:padding="@dimen/px1"/>
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="@dimen/px180"
+        android:layout_height="@dimen/px36"
+        android:layout_below="@+id/img_gallery"
+        android:layout_marginTop="@dimen/px15"
+        android:gravity="center"
+        android:textColor="@color/text_item_grid"
+        android:textSize="@dimen/px30"
+        style="@style/BaseText"
+        android:maxEms="5"/>
+</RelativeLayout>

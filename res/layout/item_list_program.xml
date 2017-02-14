@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/px424"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/px24"
+    android:paddingBottom="@dimen/px24"
+    >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/linear"
+        >
+	    <ImageView 
+	        android:id="@+id/iv_item_program"
+	        android:layout_width="@dimen/px57"
+	        android:layout_height="@dimen/px28"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/px27"
+			android:src="@drawable/live_program"
+			/>
+	    <TextView
+	        android:id="@+id/tv_item_program_time"
+	        android:layout_width="@dimen/px270"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dopool_white"
+	        android:textSize="@dimen/px35"
+	        android:layout_toRightOf="@+id/iv_item_program"
+			android:text="电影节目电影节"
+			android:layout_marginLeft="@dimen/px21"
+			/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_item_program_title"
+        android:layout_width="@dimen/px270"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_marginLeft="@dimen/px105"
+        android:textColor="@color/text_time"
+        android:textSize="@dimen/px35"
+		android:text=""
+		/>
+</RelativeLayout>

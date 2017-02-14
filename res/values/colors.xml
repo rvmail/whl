@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_time">#ababab</color>
+    <color name="text_rb_movie_normal">#ababab</color>
+    <color name="text_rb_movie_focused">#FFFFFF</color>
+    <color name="bg_transparent">#00FFFFFF</color>
+    <color name="text_item_grid">#dfe6e9</color>
+    <color name="title_movie_detail">#e6e4e0</color>
+    <color name="introdution_movie_detail">#c8d0d3</color>
+    <color name="divider_movie_detail">#69808d</color>
+    <color name="relative_recommend">#a09fa2</color>
+    <color name="title_gallery_normal">#dce4e4</color>
+    <color name="title_gallery_focused">#dee5e8</color>
+    <color name="text_bottom_main">#adb4ba</color>
+    <color name="volume_normal">#696c6c</color>
+    <color name="volume_add">#2da1e5</color>
+    <color name="back_color">#b0000000</color>
+    <color name="text_keyboard_normal">#aab2ba</color>
+    <color name="text_search_no_data_hint">#e2e2e3</color>
+    <color name="text_live_normal">#bec3c2</color>
+    <color name="text_live_focus">#fdffff</color>
+    
+    <color name="dopool_white">#ffffff</color>
+    <color name="live_text_color">#becbcc</color>
+    
+</resources>

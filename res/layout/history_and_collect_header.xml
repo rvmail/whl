@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px138" >
+    
+    <ImageView
+        android:layout_width="@dimen/px220"
+        android:layout_height="@dimen/px66"
+        android:layout_marginLeft="@dimen/px93"
+        android:layout_marginTop="@dimen/px66"
+        android:src="@drawable/newtv_logo" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px60"
+        android:layout_marginRight="@dimen/px136"
+        style="@style/TimeText"
+        android:textSize="@dimen/px60"
+        android:text="@string/str_favorite"/>
+    
+</RelativeLayout>

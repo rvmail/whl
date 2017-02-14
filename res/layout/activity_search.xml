@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_search"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_width="@dimen/px720"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px80"
+        android:background="@drawable/bg_search_tv"
+        android:gravity="center_vertical"
+        android:hint="@string/text_search_hint"
+        android:paddingLeft="@dimen/px36"
+        android:paddingRight="@dimen/px45"
+        android:singleLine="true"
+        android:textSize="@dimen/px45"
+        android:textColor="#6f7476"
+        android:paddingTop="@dimen/px6"
+        android:maxLength="12"
+        />
+    <TextView
+        android:id="@+id/search_remind_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_tv"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/px10"
+        android:text="@string/text_search_remind"
+        android:textSize="@dimen/px30" 
+        android:textColor="#adafbf"/>
+
+    <RelativeLayout 
+        android:id="@+id/search_result"
+        android:layout_width="@dimen/px1920"
+        android:layout_height="@dimen/px423"
+	    android:layout_below="@+id/search_remind_hint"
+	    android:layout_marginTop="@dimen/px14"
+	    android:layout_marginBottom="@dimen/px14"
+        >
+	    <com.dopool.icntvoverseas.view.focusrecyclerview.SearchRecyclerView
+	        android:id="@+id/search_recyclerview"
+	        android:layout_width="@dimen/px1920"
+	        android:layout_height="@dimen/px423"
+	        android:paddingLeft="@dimen/px80"
+	        android:paddingRight="@dimen/px80"
+	        android:paddingTop="@dimen/px36"
+	        android:paddingBottom="@dimen/px36"
+	        android:scrollbars="@null" 
+	        android:clipToPadding="false"
+	        >
+	    </com.dopool.icntvoverseas.view.focusrecyclerview.SearchRecyclerView>
+	    
+	    <TextView 
+	        android:id="@+id/empty_view"
+	        android:layout_width="@dimen/px1920"
+	        android:layout_height="@dimen/px423"
+	        android:paddingTop="@dimen/px31"
+	        android:paddingBottom="@dimen/px31"
+	        android:visibility="gone"
+	        android:text="@string/text_search_no_data_hint"
+	        android:textSize="@dimen/px60"
+	        android:textColor="@color/text_bottom_main"
+	        android:gravity="center"
+	        />
+	    
+	    <FrameLayout 
+        	android:id="@+id/container_buffering"
+        	android:layout_width="@dimen/px206"
+        	android:layout_height="@dimen/px206"
+        	android:layout_centerInParent="true"
+        	android:visibility="gone">
+        	<ProgressBar
+            	android:layout_width="@dimen/px206"
+            	android:layout_height="@dimen/px206"
+            	android:indeterminateDrawable="@anim/large_progressbar_animator"
+            	android:indeterminateDuration="1000"/>
+        	<TextView 
+            	android:layout_width="@dimen/px206"
+            	android:layout_height="@dimen/px206"
+            	android:text="@string/tip_progress_loading"
+            	android:gravity="center"
+           		android:textColor="#66ffff"
+            	android:textSize="@dimen/px33"/>
+    	</FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/devider_search_keyboard"
+        android:orientation="horizontal"
+        android:showDividers="middle" 
+        android:layout_below="@id/search_result"
+        android:layout_marginTop="@dimen/px30"
+        >
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_abc"
+            style="@style/KeyboardTextView"
+            android:text="A B C" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_def"
+            style="@style/KeyboardTextView"
+            android:text="D E F" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_ghi"
+            style="@style/KeyboardTextView"
+            android:text="G H I" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_jkl"
+            style="@style/KeyboardTextView"
+            android:text="J K L" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_mno"
+            style="@style/KeyboardTextView"
+            android:text="M N O" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_pqr"
+            style="@style/KeyboardTextView"
+            android:text="P Q R" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_stu"
+            style="@style/KeyboardTextView"
+            android:text="S T U" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_vwx"
+            style="@style/KeyboardTextView"
+            android:text="V W X" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_yz0"
+            style="@style/KeyboardTextView"
+            android:text="Y Z 0" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_123"
+            style="@style/KeyboardTextView"
+            android:text="1 2 3" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_456"
+            style="@style/KeyboardTextView"
+            android:text="4 5 6" />
+
+        <TextView
+            android:id="@+id/search_tv_keyboard_789"
+            style="@style/KeyboardTextView"
+            android:text="7 8 9" />
+
+        <ImageView
+            android:id="@+id/search_imgvi_keyboard_delete"
+            android:layout_width="@dimen/px83"
+            android:layout_height="@dimen/px283"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_search_keyboard"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/px27"
+            android:src="@drawable/ic_search_keyboard_delete" />
+
+        <ImageView
+            android:id="@+id/search_imgvi_keyboard_search"
+            android:layout_width="@dimen/px83"
+            android:layout_height="@dimen/px283"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_search_keyboard"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/px14"
+            android:src="@drawable/ic_search" />
+    </LinearLayout>
+</RelativeLayout>

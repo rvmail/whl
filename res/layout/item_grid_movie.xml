@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:gravity="center"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    
+    <ImageView
+    	android:id="@+id/img_grid_movie"
+        android:layout_width="@dimen/px225"
+        android:layout_height="@dimen/px318"
+        android:background="@drawable/newtv_default"
+        android:scaleType="fitXY"
+        android:padding="@dimen/px1"/>
+    <TextView
+        android:id="@+id/tv_grid_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_grid_movie"
+        android:layout_marginTop="@dimen/px9"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_item_grid"
+        android:textSize="@dimen/px30"
+        style="@style/BaseText"
+        android:maxEms="6"
+        android:text=""/>
+</RelativeLayout>

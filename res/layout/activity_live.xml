@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    <FrameLayout
+    	android:id="@+id/fra_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/container_buffering"
+        android:layout_width="@dimen/px206"
+        android:layout_height="@dimen/px206"
+        android:layout_gravity="center"
+        android:visibility="visible">
+        <ProgressBar
+            android:id="@+id/progressbar_buffering"
+            android:layout_width="@dimen/px206"
+            android:layout_height="@dimen/px206"
+            android:indeterminateDrawable="@anim/large_progressbar_animator"
+            android:indeterminateDuration="1000"/>
+        <TextView 
+            android:id="@+id/tv_buffering"
+            android:layout_width="@dimen/px206"
+            android:layout_height="@dimen/px206"
+            android:text="@string/tip_progress_loading"
+            android:gravity="center"
+           	android:textColor="#66ffff"
+            android:textSize="@dimen/px33"/>
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/container_live"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <RelativeLayout
+            android:id="@+id/left_menu_alive"
+            android:layout_width="@dimen/px475"
+            android:layout_height="@dimen/px1018"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/px52"
+            android:background="@drawable/bg_left_menu" >
+        	<ListView
+            	android:id="@+id/lv_channel_alive"
+            	style="@style/GuideListGroup"
+            	android:layout_width="@dimen/px428"
+            	android:layout_height="@dimen/px835"
+            	android:layout_alignParentLeft="true"
+            	android:layout_marginTop="@dimen/px171"
+            	android:divider="@drawable/divider_live"
+            	android:focusable="true"
+             	>
+        	</ListView>
+    	</RelativeLayout>
+    
+    	<RelativeLayout
+        	android:id="@+id/right_menu_alive"
+        	android:layout_width="@dimen/px475"
+        	android:layout_height="@dimen/px1018"
+        	android:layout_gravity="center_vertical|right"
+        	android:layout_marginRight="@dimen/px52"
+        	android:background="@drawable/bg_right_menu">
+        	<View 
+        	    android:layout_height="@dimen/px3"
+        	    android:layout_width="@dimen/px428"
+        	    android:background="@drawable/divider_live"
+        		android:layout_marginTop="@dimen/px171"
+        		android:layout_alignParentRight="true"
+        		android:id="@+id/divider_right"
+        	    />
+        	<ListView 
+            	android:id="@+id/lv_program_alive"
+            	android:layout_width="@dimen/px428"
+        		android:layout_height="@dimen/px830"
+        		android:layout_below="@id/divider_right"
+        		android:layout_alignParentRight="true"
+				style="@style/GuideListGroup"
+				android:divider="@drawable/divider_live"/>
+    	</RelativeLayout>
+    </FrameLayout>
+    
+</FrameLayout>

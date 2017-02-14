@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px220"
+    android:layout_height="@dimen/px381"
+    android:clipChildren="false"
+    >
+        
+    <ImageView
+        android:id="@+id/grid_item"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/px220"
+        android:layout_height="@dimen/px300"
+        android:padding="1px"
+        android:src="@drawable/newtv_default"
+    	android:background="@drawable/recyclerview_item_bg"
+     />
+    
+	<TextView
+        android:layout_below="@+id/grid_item"
+        android:id="@+id/grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px81"
+        android:paddingTop="@dimen/px5"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/px25"
+        style="@style/BaseText"
+        android:maxEms="6"
+        />    
+    
+    
+</RelativeLayout>

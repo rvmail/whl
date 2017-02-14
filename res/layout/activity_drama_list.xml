@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_drama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" 
+    >
+    
+    
+    <TextView 
+	    android:id="@+id/empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:text="@string/no_epg"
+	    android:textSize="@dimen/px60"
+		android:gravity="center"
+		android:textColor="@color/text_bottom_main"
+		android:visibility="gone"
+	    />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px138"
+        android:id="@+id/header"
+        >
+	    <ImageView
+	    	android:id="@+id/iv_logo_drama"
+	        android:layout_width="@dimen/px220"
+	        android:layout_height="@dimen/px66"
+	        android:layout_marginLeft="@dimen/px93"
+	        android:layout_marginTop="@dimen/px66"
+	        android:src="@drawable/newtv_logo" 
+	        />
+	    <ImageView
+        	android:id="@+id/iv_wifi_drama"
+        	android:layout_width="@dimen/px90"
+        	android:layout_height="@dimen/px84"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="@dimen/px96"
+        	android:layout_alignParentBottom="true"
+        	android:src="@drawable/wifi"/>
+    
+    	<ImageView
+        	android:id="@+id/iv_setting_drama"
+        	android:layout_width="@dimen/px84"
+       		android:layout_height="@dimen/px84"
+       		android:layout_alignTop="@id/iv_wifi_drama"
+        	android:layout_toLeftOf="@id/iv_wifi_drama"
+        	android:layout_marginRight="@dimen/px21"
+       		android:scaleType="fitXY"
+       		android:clickable="true"
+        	android:focusable="true"
+        	android:src="@drawable/icon_setting"
+        	android:background="@drawable/img_selector_search"/>
+    	<ImageView
+        	android:id="@+id/iv_search_drama"
+        	android:layout_width="@dimen/px84"
+        	android:layout_height="@dimen/px84"
+        	android:layout_toLeftOf="@id/iv_setting_drama"
+        	android:layout_alignTop="@id/iv_setting_drama"
+        	android:layout_marginRight="@dimen/px21"
+        	android:scaleType="fitXY"
+        	android:clickable="true"
+        	android:focusable="true"
+        	android:src="@drawable/icon_search" 
+        	android:background="@drawable/img_selector_search"/>
+	     
+     </RelativeLayout>
+     
+    <RelativeLayout 
+        android:id="@+id/footer"
+        android:layout_height="@dimen/px942"
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        >
+    	
+
+	    
+        <TextView
+	        android:id="@+id/tv_count_drama"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/px30"
+	        android:textSize="@dimen/px27"
+	        android:layout_alignParentRight="true"
+	        style="@style/BaseText"
+	        android:layout_marginRight="@dimen/px96"
+	        />
+        
+	    <com.dopool.icntvoverseas.view.CustomListView
+	        android:id="@+id/lv_drama_type"
+	        style="@style/GuideListGroup"
+	        android:layout_width="@dimen/px310"
+	        android:layout_height="@dimen/px660"
+	        android:layout_marginLeft="@dimen/px96"
+	        android:focusable="true"
+	        android:layout_marginTop="@dimen/px45"
+	        >
+	    </com.dopool.icntvoverseas.view.CustomListView>
+	    
+	    <com.dopool.icntvoverseas.view.focusrecyclerview.DramaListRecyclerView
+	        android:id="@+id/gv_drama"
+	        android:layout_width="@dimen/px1514"
+	        android:layout_height="@dimen/px864"
+	        android:layout_toRightOf="@id/lv_drama_type"
+	        android:paddingRight="@dimen/px96"
+	        android:paddingLeft="@dimen/px98"
+	        android:paddingTop="@dimen/px42"
+	        android:clipToPadding="false"
+	        android:layout_marginTop="@dimen/px18"
+	        android:visibility="gone"
+	        >
+	    </com.dopool.icntvoverseas.view.focusrecyclerview.DramaListRecyclerView>
+
+	    <ImageView 
+		    android:id="@+id/iv_up"
+		    android:layout_height="@dimen/px28"
+		    android:layout_width="@dimen/px50"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="@dimen/px775"
+		    android:background="@drawable/up"
+		    android:visibility="gone"/>
+		    
+		<ImageView 
+		    android:id="@+id/iv_down"
+		    android:layout_height="@dimen/px30"
+		    android:layout_width="@dimen/px50"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="@dimen/px775"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="@dimen/px75"
+		    android:background="@drawable/down"
+		    android:visibility="gone"/>
+	</RelativeLayout>
+	
+    <FrameLayout 
+        	android:id="@+id/container_buffering_catg"
+        	android:layout_width="@dimen/px206"
+        	android:layout_height="@dimen/px206"
+        	android:layout_centerInParent="true"
+        	android:visibility="visible">
+        	<ProgressBar
+            	android:layout_width="@dimen/px206"
+            	android:layout_height="@dimen/px206"
+            	android:indeterminateDrawable="@anim/large_progressbar_animator"
+            	android:indeterminateDuration="1000"/>
+        	<TextView 
+            	android:layout_width="@dimen/px206"
+            	android:layout_height="@dimen/px206"
+            	android:text="@string/tip_progress_loading"
+            	android:gravity="center"
+           		android:textColor="#66ffff"
+            	android:textSize="@dimen/px33"/>
+    	</FrameLayout>
+	
+</RelativeLayout>

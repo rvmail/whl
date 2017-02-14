@@ -1,0 +1,86 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:typeface">monospace</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    	<item name="android:typeface">monospace</item>
+    </style>
+    
+    <!-- 文本显示的基本style -->
+    <style name="BaseText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_item_grid</item>
+    </style>
+    
+    <!-- 首页底部布局的文本显示 -->
+    <style name="BottomText" parent="BaseText">
+        <item name="android:textColor">@color/text_bottom_main</item>
+        <item name="android:textSize">@dimen/px44</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="BottomEnText" parent="BottomText">
+        <item name="android:textSize">@dimen/px30</item>
+    </style>
+    <!-- 首页时间、日期的文本显示 -->
+    <style name="TimeText" parent="BaseText">
+        <item name="android:textColor">@color/text_time</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 导航栏的文本显示 -->
+    <style name="MovieRBText" parent="BaseText">
+        <item name="android:textColor">@color/text_time</item>
+    </style>
+    
+    <!-- 导航栏的布局显示 -->
+    <style name="GuideListGroup">
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    
+    <!-- 单片详情页的文本介绍显示 -->
+    <style name="IntrodutionText" parent="BaseText">
+        <item name="android:textColor">@color/introdution_movie_detail</item>
+        <item name="android:textSize">@dimen/px27</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+    <!--keyboard textview  -->
+    <style name="KeyboardTextView">
+        <item name="android:layout_width">@dimen/px83</item>
+        <item name="android:layout_height">@dimen/px283</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/selector_search_keyboard</item>
+        <item name="android:ems">1</item>
+        <item name="android:textColor">@color/selector_search_keyboard_tv</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:padding">@dimen/px18</item>
+        <item name="android:textSize">@dimen/px45</item>
+        <item name="android:focusable">true</item>
+    </style>
+    
+</resources>

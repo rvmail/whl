@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+	<ImageView
+    	android:id="@+id/iv_logo"
+        android:layout_width="@dimen/px220"
+        android:layout_height="@dimen/px66"
+        android:layout_marginLeft="@dimen/px93"
+        android:layout_marginTop="@dimen/px66"
+        android:src="@drawable/newtv_logo" />
+    <ImageView
+        android:id="@+id/iv_wifi_main"
+        android:layout_width="@dimen/px90"
+        android:layout_height="@dimen/px84"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px96"
+        android:layout_alignTop="@id/iv_logo"
+        android:src="@drawable/wifi"/>
+    
+    <ImageView
+        android:id="@+id/iv_setting_main"
+        android:layout_width="@dimen/px84"
+       	android:layout_height="@dimen/px84"
+       	android:layout_alignTop="@id/iv_logo"
+        android:layout_toLeftOf="@id/iv_wifi_main"
+        android:layout_marginRight="@dimen/px21"
+       	android:scaleType="fitXY"
+       	android:clickable="true"
+        android:focusable="true"
+       	android:nextFocusDown="@+id/frame_recommendview"
+        android:src="@drawable/icon_setting"
+        android:background="@drawable/img_selector_search"/>
+    <ImageView
+        android:id="@+id/iv_search_main"
+        android:layout_width="@dimen/px84"
+        android:layout_height="@dimen/px84"
+        android:layout_toLeftOf="@id/iv_setting_main"
+        android:layout_alignTop="@id/iv_setting_main"
+        android:layout_marginRight="@dimen/px21"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:nextFocusDown="@+id/frame_recommendview"
+        android:src="@drawable/icon_search" 
+        android:background="@drawable/img_selector_search"/>
+
+    <FrameLayout
+        android:id="@+id/frame_recommendview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px605"
+		android:layout_marginLeft="@dimen/px114"
+        android:layout_marginRight="@dimen/px114"
+        android:layout_centerInParent="true">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="@dimen/px960"
+        android:layout_height="@dimen/px110"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px70">
+
+        <RelativeLayout
+            android:id="@+id/rl_alive"
+            android:layout_width="@dimen/px240"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_selector_bottom"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_alive"
+                style="@style/BottomText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px56"
+                android:text="@string/str_live" />
+
+            <TextView
+                android:id="@+id/tv_alive_en"
+                style="@style/BottomEnText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px44"
+                android:layout_below="@+id/tv_alive"
+                android:layout_marginTop="@dimen/px10"
+                android:text="@string/str_live_en" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vod"
+            android:layout_width="@dimen/px240"
+        	android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rl_alive"
+            android:background="@drawable/bg_selector_bottom"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_vod"
+                style="@style/BottomText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px56"
+                android:text="@string/str_vod" />
+
+            <TextView
+                android:id="@+id/tv_vod_en"
+                style="@style/BottomEnText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px44"
+                android:layout_below="@+id/tv_vod"
+                android:layout_marginTop="@dimen/px10"
+                android:text="@string/str_vod_en" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_history"
+            android:layout_width="@dimen/px240"
+        	android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rl_vod"
+            android:background="@drawable/bg_selector_bottom"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_history"
+                style="@style/BottomText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px56"
+                android:text="@string/str_history" />
+
+            <TextView
+                android:id="@+id/tv_history_en"
+                style="@style/BottomEnText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px44"
+                android:layout_below="@+id/tv_history"
+                android:layout_marginTop="@dimen/px10"
+                android:text="@string/str_history_en" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_collect"
+            android:layout_width="@dimen/px240"
+        	android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rl_history"
+            android:background="@drawable/bg_selector_bottom"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_collect"
+                style="@style/BottomText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px56"
+                android:text="@string/str_favorite" />
+
+            <TextView
+                android:id="@+id/tv_collect_en"
+                style="@style/BottomEnText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px44"
+                android:layout_below="@+id/tv_collect"
+                android:layout_marginTop="@dimen/px10"
+                android:text="@string/str_favorite_en" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/container_buffering"
+        android:layout_width="@dimen/px206"
+        android:layout_height="@dimen/px206"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_width="@dimen/px206"
+            android:layout_height="@dimen/px206"
+            android:indeterminateDrawable="@anim/large_progressbar_animator"
+            android:indeterminateDuration="1000"/>
+        <TextView 
+            android:layout_width="@dimen/px206"
+            android:layout_height="@dimen/px206"
+            android:text="@string/tip_progress_loading"
+            android:gravity="center"
+           	android:textColor="#66ffff"
+            android:textSize="@dimen/px33"/>
+    </FrameLayout>
+
+</RelativeLayout>
